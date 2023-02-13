@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      
+      
+    </header>
+
+    <div class="wrapper">
+
+       <div class="title-text">
+          
+            <h1 class="title login">Login Form</h1>
+            <h1 class="title register">SignUp Form</h1>
+
+       </div>
+
+       <div class="form-container">
+
+          <div class="slide-controls">
+             <input type="radio" name="slide" id="login" checked>
+             <input type="radio" name="slide" id="register">
+             <label for="login" class="slide login">Login</label>
+             <label for="register" class="slide register">SignUp</label>
+             <div class="slider-tab"></div>
+          </div>
+
+          <div class="form-inner">
+
+             <form action="#" class="login">
+                <input class="field" type="text" id="username" placeholder="User Name" required>
+                <input class="field" type="password" id="password" placeholder="Password" required>
+                <p class="pass-link"><a href="#">Forgot password?</a></p>
+                
+
+                <div class="field btn">
+                   <div class="btn-layer"></div>
+                   <input type="submit" onClick="login()" value="Login">
+                </div>
+
+                <p class="register-link">Don't have an account? <a href="">SignUp Now</a></p>
+                
+             </form>
+
+             <form action="#" class="register">
+                    <input class="field" type="text" id="fullName" placeholder="Full Name" required>
+                    <input class="field" type="text" id="phoneNumber" placeholder="Phone Number" required>
+                    <input class="field" type="text" id="emailId" placeholder="Email Address" required>
+                    <input class="field" type="text" id="newUsername" placeholder="User Name" required>
+                    <input class="field" type="password" id="newPassword" placeholder="Password" required>
+
+
+                <div class="field btn">
+                   <div class="btn-layer"></div>
+                   <input type="submit" onClick="register()" value="Register">
+                </div>
+
+        
+                <p class="login-link">Already registered? <a href="">Login</a></p>
+        
+                 
+             </form>
+
+          </div>
+       </div>
+    </div>
+
+    <script src="index.js"></script>
+ </body>
+</html>
